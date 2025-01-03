@@ -26,3 +26,7 @@ pub fn get_out_dir() -> PathBuf {
 
     base_path
 }
+
+pub fn get_cache_path() -> PathBuf {
+    get_working_dir().join("cache.json")
+}
